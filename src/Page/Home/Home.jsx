@@ -1,3 +1,4 @@
+import Blog from "../../Component/Blog/Blog";
 import Hero from "../../Component/Hero/Hero";
 import Project from "../../Component/Project/Project";
 import Skill from "../../Component/Skill/Skill";
@@ -8,6 +9,7 @@ const Home = () => {
 			<Hero />
 			<Skill />
 			<Project />
+			<Blog />
 		</div>
 	);
 };
