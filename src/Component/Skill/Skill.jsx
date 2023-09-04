@@ -1,5 +1,5 @@
 import { skill } from "../../Constant/constant";
-import "./skil.scss";
+import "./skill.scss";
 const Skill = () => {
 	return (
 		<div>
