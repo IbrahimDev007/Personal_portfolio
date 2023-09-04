@@ -6,9 +6,15 @@ import Navbar from "./Shared/Navbar";
 function App() {
 	return (
 		<>
-			<Navbar></Navbar>
-			<Home />
-			<Footer />
+			<div className="flex flex-col min-h-[100vh]">
+				<Navbar />
+				<div className=" flex-1 justify-center">
+					<Home />
+				</div>
+				<div className="flex-shrink-0">
+					<Footer />
+				</div>
+			</div>
 		</>
 	);
 }

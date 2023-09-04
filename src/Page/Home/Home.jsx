@@ -1,5 +1,13 @@
+import Hero from "../../Component/Hero/Hero";
+import Skill from "../../Component/Skill/Skill";
+
 const Home = () => {
-	return <div>This is home</div>;
+	return (
+		<div>
+			<Hero />
+			<Skill />
+		</div>
+	);
 };
 
 export default Home;
