@@ -1,11 +1,7 @@
 import { useState } from "react";
 
 const ImageStack = () => {
-	const images = [
-		"/src/assets/project1.png",
-		"/src/assets/project 2.png",
-		"/src/assets/project 3.png",
-	];
+	const images = ["project1.png", "project 2.png", "project 3.png"];
 
 	const [currentIndex, setCurrentIndex] = useState(0);
 
