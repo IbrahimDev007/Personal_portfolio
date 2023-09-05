@@ -1,6 +1,8 @@
 import { Typewriter } from "react-simple-typewriter";
 import Particles from "react-tsparticles";
 import { motion } from "framer-motion";
+import img from "../../assets/picture/ibu.jpg";
+
 const Hero = () => {
 	const option = {
 		background: {
@@ -26,10 +28,7 @@ const Hero = () => {
 			<Particles id="tsparticles" option={option} />
 			<div className="hero min-h-screen bg-base-200">
 				<div className="hero-content flex-col justify-between lg:flex-row ">
-					<img
-						src="https://scontent.fdac144-1.fna.fbcdn.net/v/t39.30808-6/344763256_255681717045588_6379192604056004524_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeFTznyC-3TdkANdw5WLAa6kvUj4ZWflPc29SPhlZ-U9zSURcnDmkCzy1iXu0Q4NI8mpzmEahRXavIMVS3Xrr8zd&_nc_ohc=sB5uiznOjCgAX_ImPuz&_nc_ht=scontent.fdac144-1.fna&oh=00_AfDNizrYgP1v2oJPJZfhmPrY_zOomT0KbmkL5kjgDJ-asw&oe=64F502AE"
-						className="max-w-sm rounded-lg shadow-2xl"
-					/>
+					<img src={img} className="max-w-sm rounded-lg shadow-2xl" />
 					<div>
 						<h1 className="text-3xl font-bold">
 							Hi, I&apos;m Ibrahim Khalil Ullah

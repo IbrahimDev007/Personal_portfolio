@@ -1,8 +1,14 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
 	const form = useRef();
+
+	const [formData, setFormData] = useState({
+		user_name: "",
+		user_email: "",
+		message: "",
+	});
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -17,6 +23,12 @@ export const Contact = () => {
 			.then(
 				(result) => {
 					console.log(result.text);
+					// Clear the form fields after successful submission
+					setFormData({
+						user_name: "",
+						user_email: "",
+						message: "",
+					});
 				},
 				(error) => {
 					console.log(error.text);
@@ -24,9 +36,16 @@ export const Contact = () => {
 			);
 	};
 
+	const handleInputChange = (e) => {
+		const { name, value } = e.target;
+		setFormData({
+			...formData,
+			[name]: value,
+		});
+	};
+
 	return (
 		<div>
-			<h1 className="text-5xl font-bold">Contact Us_</h1>
 			<form
 				className="w-full max-w-md mx-auto p-4 bg-white shadow-md rounded-lg"
 				ref={form}
@@ -44,6 +63,8 @@ export const Contact = () => {
 						name="user_name"
 						id="user_name"
 						className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+						value={formData.user_name}
+						onChange={handleInputChange}
 					/>
 				</div>
 				<div className="mb-4">
@@ -58,6 +79,8 @@ export const Contact = () => {
 						name="user_email"
 						id="user_email"
 						className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+						value={formData.user_email}
+						onChange={handleInputChange}
 					/>
 				</div>
 				<div className="mb-6">
@@ -72,6 +95,8 @@ export const Contact = () => {
 						id="message"
 						rows="4"
 						className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+						value={formData.message}
+						onChange={handleInputChange}
 					></textarea>
 				</div>
 				<div className="flex justify-center">

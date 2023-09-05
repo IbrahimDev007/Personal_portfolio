@@ -1,12 +1,16 @@
 export const skill = [
 
-    { img: "demo.jpg", title: "demo " },
-    { img: "demo.jpg", title: "demo " },
-    { img: "demo.jpg", title: "demo " },
-    { img: "demo.jpg", title: "demo " },
-    { img: "demo.jpg", title: "demo " },
-    { img: "demo.jpg", title: "demo " },
-    { img: "demo.jpg", title: "demo " },
+    { img: "/public/stack/express.png", title: "demo " },
+    { img: "/public/stack/figma logo.jpeg", title: "demo " },
+    { img: "/public/stack/js.PNG", title: "demo " },
+    { img: "/public/stack/mongo.png", title: "demo " },
+    { img: "/public/stack/mui.PNG", title: "demo " },
+    { img: "/public/stack/nextJS.png", title: "demo " },
+    { img: "/public/stack/node.png", title: "demo " },
+    { img: "/public/stack/react.PNG", title: "demo " },
+    { img: "/public/stack/redux.png", title: "demo " },
+    { img: "/public/stack/tailwind.PNG", title: "demo " },
+    { img: "/public/stack/typescript.png", title: "demo " },
 
 ]
 
@@ -35,7 +39,7 @@ export const project = [
         img: '/src/assets/project 3.png',
         live: "https://resonant-dieffenbachia-d0dca2.netlify.app/",
         feture: ["Newsletter Section", "User Authentication", "Collapsible Mobile Menu"],
-        technology: ["React", "React Bootstrap", "Firebase", "Node.js"],
+        technology: ["React", "tailwind", "Firebase", "Node.js"],
         client: "https://github.com/IbrahimDev007/Indian-chef-recipe-client",
         server: "https://github.com/yourusername/indian-chef-recipe-server"
     }
