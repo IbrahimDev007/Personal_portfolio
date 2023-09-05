@@ -1,16 +1,16 @@
 export const skill = [
 
-    { img: "./public/stack/express.png", title: "demo " },
-    { img: "./public/stack/figma logo.jpeg", title: "demo " },
-    { img: "./public/stack/js.PNG", title: "demo " },
-    { img: "./public/stack/mongo.png", title: "demo " },
-    { img: "./public/stack/mui.PNG", title: "demo " },
-    { img: "./public/stack/nextJS.png", title: "demo " },
-    { img: "./public/stack/node.png", title: "demo " },
-    { img: "./public/stack/react.PNG", title: "demo " },
-    { img: "./public/stack/redux.png", title: "demo " },
-    { img: "./public/stack/tailwind.PNG", title: "demo " },
-    { img: "./public/stack/typescript.png", title: "demo " },
+    { img: "stack/express.png", title: "demo " },
+    { img: "stack/figma logo.jpeg", title: "demo " },
+    { img: "stack/js.PNG", title: "demo " },
+    { img: "stack/mongo.png", title: "demo " },
+    { img: "stack/mui.PNG", title: "demo " },
+    { img: "stack/nextJS.png", title: "demo " },
+    { img: "stack/node.png", title: "demo " },
+    { img: "stack/react.PNG", title: "demo " },
+    { img: "stack/redux.png", title: "demo " },
+    { img: "stack/tailwind.PNG", title: "demo " },
+    { img: "stack/typescript.png", title: "demo " },
 
 ]
 
